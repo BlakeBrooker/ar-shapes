@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <!-- include A-Frame-->
+    <script src="https:/aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame-->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+  
+  <body>
+    <a-scene embedded arjs>
+    <!-- create an a-scene to hold your cntent here, just a box for now-->
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <!-- define a camera which will move accoriding to the marker position-->
+    <a-cylinder postion='2 3 2' color='red'></a-cylinder>
+    <a-sphere position='3,4,3' color='green'></a-sphere>
+    <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
